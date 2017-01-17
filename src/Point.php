@@ -1,5 +1,7 @@
 <?php
 
+namespace ClosestPoints;
+
 class Point
 {
     /** @var int */

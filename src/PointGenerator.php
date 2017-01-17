@@ -1,5 +1,7 @@
 <?php
 
+namespace ClosestPoints;
+
 class PointGenerator
 {
     /**
