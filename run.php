@@ -7,7 +7,8 @@ use ClosestPoints\Strategy;
 use ClosestPoints\PointGenerator;
 use ClosestPoints\Application;
 
-$strategy = new Strategy\LanguageDefault();
+$application = new Application(new Console(), new PointGenerator(), new Strategy\Example());
+$application->run();
 
-$application = new Application(new Console(), new PointGenerator(), $strategy);
+$application = new Application(new Console(), new PointGenerator(), new Strategy\QuickSort());
 $application->run();

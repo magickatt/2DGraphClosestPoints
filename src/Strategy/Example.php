@@ -5,7 +5,7 @@ namespace ClosestPoints\Strategy;
 use ClosestPoints\Point;
 use ClosestPoints\StrategyInterface;
 
-class LanguageDefault implements StrategyInterface
+class Example implements StrategyInterface
 {
     public function sort(array $points)
     {

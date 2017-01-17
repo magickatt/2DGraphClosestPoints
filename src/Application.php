@@ -30,7 +30,8 @@ class Application
     public function run()
     {
         $points = $this->strategy->sort($this->points);
-        for ($x = 0; $x < 100; $x++) {
+        $this->console->writeLine('Closest 10 points sorted using '.get_class($this->strategy).'...');
+        for ($x = 0; $x < 10; $x++) {
             /** @var Point $point */
             $point = $points[$x];
             $this->log($point, $x);
@@ -43,6 +44,6 @@ class Application
      */
     private function log(Point $point, $x)
     {
-        $this->console->writeLine('Closest '.$x.': '.$point->x().', '.$point->y());
+        $this->console->writeLine('Closest '.($x + 1).': '.$point->x().', '.$point->y());
     }
 }
