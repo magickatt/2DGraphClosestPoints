@@ -2,6 +2,10 @@
 
 class PointGenerator
 {
+    /**
+     * @param int $n How many points to generate
+     * @return array $n number of Point object
+     */
     public function generatePoints($n = 1000)
     {
         $points = [];
